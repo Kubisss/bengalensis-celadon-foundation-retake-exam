@@ -21,17 +21,16 @@ public class MultiplyItemsInMatrix {
         int multiply = 0;
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
-                if (i % 2 == 0) {
-                    System.out.println(i);
+                if (i % 2 == 0 && matrix[i].length % 2 == 0) {
+                    multiply = i * 2;
+                    multipledMatrix[i][j] =matrix[multiply][j];
                 } else {
-
+                    multiply = i *2;
+                    multipledMatrix[i][j] =matrix[multiply][j];
                 }
-                multipledMatrix[i][j] = multipledMatrix[multiply][j];
             }
 
         }
-
-
         return multipledMatrix;
     }
 }
