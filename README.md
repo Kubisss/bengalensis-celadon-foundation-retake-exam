@@ -67,7 +67,7 @@ Possible file reading exceptions should be handled by printing error message to 
 
 #### Example
 
-[Example input file can be found here.](./100worst.csv)
+[Example input file can be found here.](src/worstSongs/100worst.csv)
 
 **Returned value for given file**
 
