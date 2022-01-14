@@ -31,4 +31,11 @@ public class Patient {
     public void setSickness(int sickness) {
         this.sickness = sickness;
     }
+
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "sickness=" + sickness +
+                '}';
+    }
 }

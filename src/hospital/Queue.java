@@ -17,6 +17,7 @@ public abstract class Queue {
     public abstract Patient getNextPatient();
 
     public List<Patient> getPatientsQue() {
-        return patientsQue;
+        return this.patientsQue;
     }
+
 }

@@ -5,19 +5,24 @@ import java.util.List;
 
 public class Hospital {
     private Queue queue;
-    private List<Patient> patientList;
 
     public Hospital(Queue queue) {
         this.queue = queue;
-        this.patientList = new ArrayList<>();
     }
 
     public void addPatient(Patient patient) {
         this.queue.queuePatientUp(patient);
     }
 
-    public void treatNextPatient(Patient patient) {
+    public void treatNextPatient() {
+        if (this.queue.getPatientsQue().size() == 0) {return;}
         this.queue.getNextPatient().treat();
+    }
+
+    @Override
+    public String toString() {
+        return "Hospital has " + queue.getPatientsQue().size() +" patients in que." +
+                " PatientList is " + queue.getPatientsQue() +"";
     }
 }
 
