@@ -17,22 +17,24 @@ public class HospitalApp {
         hospital.addPatient(patient3);
         hospital.addPatient(patient4);
 
+//        System.out.println(hospital);
+//        hospital.getNextPatient();
+//        System.out.println(hospital);
+//        hospital.getNextPatient();
+//        System.out.println(hospital);
+
         Hospital hospital2 = new Hospital(new ClassicQueue());
         hospital2.addPatient(patient5);
         hospital2.addPatient(patient6);
         hospital2.addPatient(patient7);
         hospital2.addPatient(patient8);
 
-        System.out.println(hospital);
-        hospital.treatNextPatient();
-        hospital.treatNextPatient();
-        System.out.println(hospital);
-        System.out.println();
+        System.out.println(hospital2);
+        hospital2.getNextPatient();
+        System.out.println(hospital2);
+        hospital2.getNextPatient();
+        System.out.println(hospital2);
 
-        System.out.println(hospital2);
-        hospital2.treatNextPatient();
-        hospital2.treatNextPatient();
-        System.out.println(hospital2);
 
     }
 
