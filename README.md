@@ -165,5 +165,15 @@ computer-shop
 ### Solution
 
 ```text
-*type your answer here*
+cd desktop
+mv instock in-stock
+git add . 
+git commit -m "changed the name of instock to in-stock"
+cd
+cd laptop
+mv transit-summary.csv summary.csv
+mv summary.csv in-transit/
+head -n-2 in-stock/summary.csv
+git add .
+git commit -m "moved transit-summary.csv to summary.csv and moved it into in-transit/"
 ```
